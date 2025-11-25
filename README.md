@@ -1,12 +1,20 @@
-# NvimQt macOS App Bundle
+# NeoMacVim
 
-Create a simple `.app` bundle to launch `nvim-qt` GUI on macOS easily from Spotlight.
+A lightweight macOS app bundle wrapper to launch the official [nvim-qt](https://github.com/neovim/neovim-qt) GUI client for Neovim.
+
+---
+
+## What is NeoMacVim?
+
+NeoMacVim is **not** another Neovim GUI. Instead, it provides a simple native macOS `.app` wrapper that lets you launch the existing `nvim-qt` binary from Spotlight, Alfred, Raycast, Finder, or the Dock—just like any regular macOS app.
+
+This solves the issue that `nvim-qt` doesn’t come with a native `.app` bundle by default on macOS.
 
 ---
 
 ## Why?
 
-Neovim Qt (`nvim-qt`) doesn’t come with a native macOS `.app` bundle by default. This repo provides an easy way to create one so you can launch it like any other macOS app.
+The official Neovim Qt client (`nvim-qt`) lacks a native macOS `.app` bundle. This project offers an easy way to create one, allowing you to launch `nvim-qt` like any other app on macOS.
 
 ---
 
@@ -15,7 +23,9 @@ Neovim Qt (`nvim-qt`) doesn’t come with a native macOS `.app` bundle by defaul
 - Simple `.app` bundle launcher for `nvim-qt`
 - Custom app icon included
 - Easy to build with a single script
-- Works on macOS without needing Xcode
+- Works on macOS without Xcode
+- No need to compile or package `nvim-qt` itself
+- Launch from Spotlight, Dock, or Finder like any other macOS app
 
 ---
 
@@ -29,21 +39,21 @@ Neovim Qt (`nvim-qt`) doesn’t come with a native macOS `.app` bundle by defaul
 ### Build the app:
 
 ```bash
-git clone https://github.com/jpadamsonline/nvim-qt-macos-app.git
-cd nvim-qt-macos-app/scripts
+git clone https://github.com/jpadamsonline/neo-mac-vim.git
+cd neo-mac-vim/scripts
 chmod +x create_app.sh
 ./create_app.sh
 ```
 
-This creates NvimQt.app in the repo root.
+This creates NeoMacVim.app in the repo root.
 
 ### Move the app to your Applications folder:
 
 ```bash
-mv ../NvimQt.app ~/Applications/
+mv ../NeoMacVim.app ~/Applications/
 ```
 
-Now you can launch NvimQt from Spotlight.
+Now you can launch NeoMacVim from Spotlight, Alfred, or Raycast.
 
 
 ## Customization
@@ -57,7 +67,7 @@ To update the app icon, replace the file in resources/icon.icns and rebuild.
 
 If Spotlight doesn’t show the app, try:
 
-mdimport ~/Applications/NvimQt.app
+mdimport ~/Applications/NeoMacVim.app
 
 or restart your Mac.
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-APP_NAME="NvimQt"
+APP_NAME="NeoMacVim"
 APP_DIR="$(pwd)/$APP_NAME.app"
 
 echo "Creating $APP_NAME.app bundle..."
