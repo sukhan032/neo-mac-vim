@@ -2,7 +2,7 @@
 
 Use Neovim's Qt GUI like a regular Mac app—no terminal required.
 
-NeoMacVim wraps the official [nvim-qt](https://github.com/neovim/neovim-qt) into a macOS `.app` bundle. This means you can open it from Spotlight, Alfred, the Dock, or Finder—just like any other app.
+NeoMacVim wraps the official [nvim-qt](https://github.com/equalsraf/neovim-qt) into a macOS `.app` bundle. This means you can open it from Spotlight, Alfred, the Dock, or Finder—just like any other app.
 
 ## Is this for you?
 
@@ -107,7 +107,7 @@ Licensed under MIT.
 
 Created by [@jpadamsonline](https://github.com/jpadamsonline)
 
-- [Neovim Qt GUI](https://github.com/neovim/neovim-qt)  
+- [Neovim Qt GUI](https://github.com/equalsraf/neovim-qt)  
 - [Neovim](https://neovim.io/)  
 - [MacVim](https://macvim-dev.github.io/) — MacVim inspired the native app experience
 
